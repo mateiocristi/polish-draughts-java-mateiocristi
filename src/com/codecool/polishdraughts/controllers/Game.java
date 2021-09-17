@@ -36,7 +36,7 @@ public class Game implements IGame {
                 break;
             }
             int userInt = Integer.parseInt(userInput);
-            if (userInt >= 10 && userInt <= 20) {////////////////////////////////
+            if (userInt >= 5 && userInt <= 20) {////////////////////////////////
                 wrongUserInput = false;
                 board.createBoard(userInt);
             } else {

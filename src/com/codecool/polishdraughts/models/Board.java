@@ -36,18 +36,18 @@ public class Board implements IBoard {
                     } else {
                         fields[row][col] = null;
                     }
-                } else if (row == 1 || row == 3) {
-                    if (col % 2 == 0) {
-                        fields[row][col] = new Pawn(row, col, Color.WHITE);
-                    } else {
-                        fields[row][col] = null;
-                    }
-                } else if (row == boardSize - 1 || row == boardSize - 3) {   // black pawns
-                    if (col % 2 == 0) {
-                        fields[row][col] = new Pawn(row, col, Color.BLACK);
-                    } else {
-                        fields[row][col] = null;
-                    }
+//                } else if (row == 1 || row == 3) {
+//                    if (col % 2 == 0) {
+//                        fields[row][col] = new Pawn(row, col, Color.WHITE);
+//                    } else {
+//                        fields[row][col] = null;
+//                    }
+//                } else if (row == boardSize - 1 || row == boardSize - 3) {   // black pawns
+//                    if (col % 2 == 0) {
+//                        fields[row][col] = new Pawn(row, col, Color.BLACK);
+//                    } else {
+//                        fields[row][col] = null;
+//                    }
                 } else if (row == boardSize - 2 || row == boardSize - 4) {
                     if (col % 2 != 0) {
                         fields[row][col] = new Pawn(row, col, Color.BLACK);
